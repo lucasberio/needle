@@ -3,16 +3,16 @@ import './globals.css'
 import Nav from '@/components/Nav'
 
 export const metadata: Metadata = {
-  title: 'needle.fm — your music diary',
+  title: 'Needle — your music diary',
   description: 'Log, rate, and share every album you hear.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen" style={{ background: 'var(--needle-dark)' }}>
+      <body className="min-h-screen" style={{ background: 'var(--n-black)' }}>
         <Nav />
-        <main className="max-w-2xl mx-auto px-4 pt-6 pb-24">
+        <main className="max-w-5xl mx-auto px-8 pt-8 pb-24">
           {children}
         </main>
       </body>
